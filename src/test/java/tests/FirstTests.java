@@ -12,7 +12,7 @@ import pageobject.LoginPage;
 import pageobject.MainPage;
 import pageobject.RegisterPage;
 
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Java6Assertions.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class FirstTests {
@@ -27,7 +27,7 @@ public class FirstTests {
 
     @Before
     public void setUp() {
-git
+
         System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -35,7 +35,7 @@ git
 
         mainPage = PageFactory.initElements(driver, MainPage.class);
         loginPage = PageFactory.initElements(driver, LoginPage.class);
-      //  registerPage = PageFactory.i
+        registerPage = PageFactory.initElements(driver, RegisterPage.class);
 
     }
 
@@ -48,7 +48,33 @@ git
 
         assertTrue("User is logged in.", mainPage.isUserIsLoggedIn());
 
+    }
 
+    @Test
+    public void registerTest(){
+
+        driver.get("http://demo.nopcommerce.com/register");
+
+        String firstName = "Ada";
+        String lastName = "Kowalska";
+        String email = "test3@gmail.com";
+        String password = "zxcv1234";
+        String confirmPassword = "zxcv1234";
+        registerPage.registerUserForm(firstName, lastName, email, password, confirmPassword);
+        registerPage.clickOnSubmitButton();
+
+        assertTrue("User was reggister correctly.", driver.getCurrentUrl().equals("http://demo.nopcommerce.com/registerresult/1"));
+
+        assertThat(driver.findElement(By.xpath("//div[@class = 'result']")).getText()).contains("Your registration " +
+                "completed");
+
+    }
+
+    @Test
+    public void findAndClickMainPageElements(){
+        driver.get("http://demo.nopcommerce.com");
+
+        assertTrue(mainPage.areLinkElementClickable());
 
     }
 

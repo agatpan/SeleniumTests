@@ -2,11 +2,11 @@ package pageobject;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+
 
 public class RegisterPage {
 
-    @FindBy(name = "Gender")
+    @FindBy(id = "gender-female")
     private WebElement genderNameButton;
 
     @FindBy(name = "FirstName")
@@ -44,4 +44,6 @@ public class RegisterPage {
     public void clickOnSubmitButton() {
         submitButton.click();
     }
+
+
 }
