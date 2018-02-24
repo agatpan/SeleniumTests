@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f686c5b-d8d4-4fbf-b478-91de27369bf1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pageobject/MainPage.class" afterPath="$PROJECT_DIR$/target/test-classes/pageobject/MainPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/tests/FirstTests.class" afterPath="$PROJECT_DIR$/target/test-classes/tests/FirstTests.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/tests/FirstTests.java" afterPath="$PROJECT_DIR$/src/test/java/tests/FirstTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +66,8 @@
       <file leaf-file-name="RegisterPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageobject/RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="122">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -445,7 +444,7 @@
       <option name="presentableId" value="Default" />
       <updated>1519485081432</updated>
       <workItem from="1519485084076" duration="203000" />
-      <workItem from="1519485298887" duration="11800000" />
+      <workItem from="1519485298887" duration="12439000" />
     </task>
     <task id="LOCAL-00001" summary="add test which find and click main page elements">
       <created>1519497652815</created>
@@ -454,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519497652815</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last corrections">
+      <created>1519498390411</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519498390411</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -490,7 +496,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12003000" />
+    <option name="totallyTimeSpent" value="12642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1431" y="-4" width="1855" height="1084" extended-state="6" />
@@ -533,7 +539,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add test which find and click main page elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test which find and click main page elements" />
+    <MESSAGE value="last corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="last corrections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -606,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageobject/RegisterPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="122">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
