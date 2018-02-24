@@ -13,6 +13,7 @@ import pageobject.MainPage;
 import pageobject.RegisterPage;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class FirstTests {
@@ -42,7 +43,7 @@ public class FirstTests {
     @Test
     public void loginTest() {
         driver.get("http://demo.nopcommerce.com/login");
-        String email = "test@gmail.com";
+        String email = "test3@gmail.com";
         String password = "zxcv1234";
         loginPage.userLogin(email, password);
 
@@ -63,10 +64,10 @@ public class FirstTests {
         registerPage.registerUserForm(firstName, lastName, email, password, confirmPassword);
         registerPage.clickOnSubmitButton();
 
-        assertTrue("User was reggister correctly.", driver.getCurrentUrl().equals("http://demo.nopcommerce.com/registerresult/1"));
+        /*assertTrue("User was not reggister correctly.", driver.getCurrentUrl().equals("http://demo.nopcommerce" +
+                ".com/register"));*/
 
-        assertThat(driver.findElement(By.xpath("//div[@class = 'result']")).getText()).contains("Your registration " +
-                "completed");
+       assertThat(driver.findElement(By.xpath("//div[@class='message-error validation-summary-errors']")).getText()).contains("The specified email already exists");
 
     }
 
