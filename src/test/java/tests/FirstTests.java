@@ -27,7 +27,7 @@ public class FirstTests {
 
     @Before
     public void setUp() {
-
+git
         System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
